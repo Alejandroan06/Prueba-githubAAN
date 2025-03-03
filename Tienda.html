@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonByte - Tienda de Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>NeonByte</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="producto1.jpg" alt="Laptop futurista">
+                <h3>Laptop Futurista</h3>
+                <p>Alta potencia con diseño moderno y minimalista.</p>
+                <p><strong>$1200</strong></p>
+                <button class="agregar-carrito" data-nombre="Laptop Futurista" data-precio="1200">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="producto2.jpg" alt="Auriculares inalámbricos">
+                <h3>Auriculares Inalámbricos</h3>
+                <p>Sonido envolvente con cancelación de ruido.</p>
+                <p><strong>$250</strong></p>
+                <button class="agregar-carrito" data-nombre="Auriculares Inalámbricos" data-precio="250">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="producto3.jpg" alt="Teclado mecánico RGB">
+                <h3>Teclado Mecánico RGB</h3>
+                <p>Iluminación personalizable y switches de alta calidad.</p>
+                <p><strong>$150</strong></p>
+                <button class="agregar-carrito" data-nombre="Teclado Mecánico RGB" data-precio="150">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total-carrito">0</span></p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2025 NeonByte - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
